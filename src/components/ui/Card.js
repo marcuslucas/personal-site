@@ -38,7 +38,7 @@ const Card = (props) => {
       <div className={classes.img_box}>
         <img
           className={classes.circ_img}
-          src={require("/Users/marcuslucas/work/Personal/my-app/src/assets/headshot.jpeg")}
+          src={require("./../../../src/assets/headshot.jpeg")}
           alt="Marcus Lucas"
         ></img>
       </div>
