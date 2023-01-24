@@ -19,9 +19,7 @@ const Landing = () => {
     <div className={classes.menu}>
       <div className={classes.menuItems}>
         <div id="0" onMouseOver={mouseOver} className={`${classes.mainName}`}>
-          <Link className={`${classes.mainName}`} to={"login"}>
-            Marcus Lucas
-          </Link>
+          <Link className={`${classes.mainName}`}>Marcus Lucas</Link>
         </div>
         <Link
           to={"work"}
