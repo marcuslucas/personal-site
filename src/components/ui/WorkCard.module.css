@@ -1,0 +1,69 @@
+.project_wrapper {
+  background-color: var(--bgBlack);
+  height: 100%;
+  width: 100%;
+}
+
+.project_display {
+  margin: auto;
+  height: 500px;
+  width: 100%;
+
+  color: var(--txtWhite);
+  font-size: 2rem;
+
+  background-image: url("../../assets/photo-1507961455425-0caef37ef6fe.jpg");
+  background-position: center 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_card {
+  background-color: var(--projectcolor);
+  color: var(--txtWhite);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px;
+  margin: 20px;
+  text-align: left;
+  border-radius: 15px;
+  width: calc(100vw / 0.8);
+}
+
+.project_card h2,
+p {
+  padding: 7px;
+  margin: 0;
+}
+
+.project_name {
+  font-family: "Poppins";
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: var(--txtWhite);
+}
+
+.subtitle_date {
+  font-family: "IBM Plex Sans";
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-weight: 200;
+  color: var(--paragraph);
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05rem;
+}
+
+/* TODO: add card hover effect */

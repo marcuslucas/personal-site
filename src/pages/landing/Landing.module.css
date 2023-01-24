@@ -1,0 +1,106 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"); */
+
+/* body {
+  width: 100%;
+  height: 100%;
+  font-family: "Major Mono Display", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 20);
+  color: #47e10c; <-- GREEN NAME
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap");
+
+.menu {
+  font-family: "Poppins", monospace;
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.menuItems {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  z-index: 2;
+}
+
+.menuItem {
+  color: white;
+  /* font-size: clamp(3rem, 8vw, 8rem); */
+  font-size: 3rem;
+  display: block;
+  text-decoration: none;
+  margin: clamp(0.25rem, 0.5vw, 1rem);
+  /* padding: clamp(0.25rem, 0.5vw, 1rem) 0rem; */
+  transition: opacity 400ms ease;
+}
+
+.menuItems:hover > .menuItem {
+  opacity: 0.3;
+}
+
+.menuItems:hover > .menuItem:hover {
+  opacity: 1;
+}
+
+#menuBackgroundPattern {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: radial-gradient(
+    rgba(2255, 225, 225, 0.1) 9%,
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+.menuItems:hover ~ #menuBackgroundPattern {
+  background-size: 10vmin 10vmin;
+  opacity: 0.5;
+}
+
+.menuBackgroundImage {
+  background-image: url("../../assets/photo-1507961455425-0caef37ef6fe.jpg");
+  background-position: center 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+}
+
+.mainName {
+  color: #ffffbecc;
+  font-size: 3rem;
+  cursor: default;
+  text-decoration: none;
+}
+
+@media (max-width: 415px) {
+  .menuBackgroundImage {
+    background-position: center 40%;
+    background-size: 160vmax;
+
+    opacity: 1;
+  }
+
+  .mainName {
+    margin-right: 1rem;
+  }
+}

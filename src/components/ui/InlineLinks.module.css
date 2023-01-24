@@ -1,0 +1,38 @@
+.nav_items_container {
+  display: flex;
+}
+
+.nav_items {
+  font-family: "IBM Plex Sans";
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 0px 18px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_item {
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #ffffeccc;
+  opacity: 0.5;
+
+  padding: 8px 8px;
+  margin: 0px 10px;
+}
+
+.nav_item_active {
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #ffffeccc;
+  opacity: 1;
+
+  padding: 8px 8px;
+  margin: 0px 10px;
+}

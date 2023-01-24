@@ -1,0 +1,24 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .layout_nav {
+  height: 10%;
+} */
+
+.layout_content {
+  background-color: var(--bgBlack);
+  justify-content: center;
+  display: flex;
+  flex: 2;
+}

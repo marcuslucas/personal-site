@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@200;400;500&display=swap");
+
+.footer_container {
+  display: flex;
+  font-family: "Poppins";
+  background-color: #0a0a0a;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+
+  height: 60px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_item {
+  color: #ffffeccc;
+  width: 50%;
+}

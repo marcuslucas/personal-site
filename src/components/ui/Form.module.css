@@ -1,0 +1,132 @@
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+
+  color: var(--txtWhite);
+  border: 1px solid var(--txtWhite);
+  padding: 10px 20px;
+}
+
+.contact_text {
+  text-align: left;
+}
+
+.contact_text h1 {
+  margin-top: 10px;
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  grid-template-rows: 6rem 12rem 6rem;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+}
+
+.contact_item label {
+  text-align: left;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.form_control {
+  width: 14rem;
+  height: 2rem;
+
+  background-color: var(--offWhite);
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid var(--projectcolor);
+}
+
+.contact_msg {
+  grid-column: 1 / -1;
+}
+
+.form_msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  height: 8rem;
+  resize: none;
+}
+
+.contact_button {
+  font-family: var(--IBM);
+  font-weight: 400;
+  width: 15rem;
+  font-size: 1.4rem;
+  color: var(--offWhite);
+  background-color: var(--projectcolor);
+  border: solid 2px var(--offWhite);
+  border-radius: 3px;
+  height: 50%;
+  margin: auto 0;
+}
+
+.contact_button:hover {
+  background-color: var(--offWhite);
+  color: var(--bgBlack);
+}
+
+.contact_button:active {
+  background-color: var(--offWhite);
+  color: var(--bgBlack);
+  box-shadow: inset 0px 0px 8px #868686;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.error_text {
+  text-align: left;
+  font-weight: 300;
+  font-size: 0.7rem;
+  padding: 10px 2px;
+}
+
+.contact_icons {
+  display: flex;
+
+  min-width: 140px;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.contact_icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--txtWhite);
+}
+
+@media screen and (max-width: 810px) {
+  .contact_container {
+    justify-content: center;
+  }
+
+  .contact_form {
+    grid-template-columns: 20rem;
+    grid-template-rows: 6rem 6rem 12rem 6rem;
+  }
+
+  .contact_button {
+    width: 14rem;
+  }
+
+  .form_msg {
+    width: calc(100vw / 1.5);
+    min-width: 14rem;
+  }
+}
+
+@media screen {
+}

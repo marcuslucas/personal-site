@@ -1,0 +1,31 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.auth_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid var(--txtWhite);
+
+  color: var(--txtWhite);
+
+  height: 400px;
+  width: 400px;
+}
+
+.auth_input {
+  padding: 10px;
+  margin: 3px;
+  background-color: var(--brightBgBlack);
+  text-transform: uppercase;
+  outline-color: var(--txtWhite);
+  border: none;
+  color: var(--txtWhite);
+}
